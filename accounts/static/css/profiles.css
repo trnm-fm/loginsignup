@@ -1,0 +1,260 @@
+@font-face {
+    font-family:'Yekan';
+    src: url(./font/BYekan/BYekan+.ttf);
+}
+:root{
+    --font-neon-text-shadow: 0 0 10px rgba(18, 247, 255, 0.6),
+    0 0 20px rgba(18, 247, 255, 0.6),
+    0 0 30px rgba(18, 247, 255, 0.6),
+    0 0 40px rgba(18, 247, 255, 0.6),
+    0 0 70px rgba(18, 247, 255, 0.6),
+    0 0 80px rgba(18, 247, 255, 0.6),
+    0 0 100px rgba(18, 247, 255, 0.6),
+    0 0 150px rgba(18, 247, 255, 0.6);
+}
+body{
+    font-family: 'Yekan';
+    background-color: #d4d8f8;
+    margin: 0;
+    padding: 0;
+}
+header {
+    position: fixed;
+    top: 0%;
+    height: 15%;
+    width: 100%;
+    padding: 0 ;
+    margin: 0 ;
+    background-color: #011627;
+}
+.search-box {
+  position: absolute;
+  transform: translate(-50% -50% );
+  background-color: #d4d8f8;
+  height: 30px;
+  border-radius: 40px ;
+  padding: 10px;
+  bottom: 25%;
+  left: 1%;
+}
+.search-box:hover > .search-txt {
+  width: 250px;
+  padding: 0.6px;
+}
+.search-box:hover > .search-btn {
+  background: #011627;
+  color: #d4d8f8;
+}
+.search-btn {
+  color: #011627;
+  float: right;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color:#d4d8f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  transition: 0.4s;
+}
+.search-txt {
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    padding: 0;
+    color:#011627;
+    font-size: 15px;
+    transition: 0.4s;
+    line-height: 30px;
+    width: 0px;
+}
+.d {
+    margin : 0;
+    padding: 0;
+    color: #d4d8f8;
+    text-align: right;
+    font-family: LaleZar;
+    font-size: 40px ;
+    position: relative;
+    top: 30%;
+    right: 3%;
+}
+.d .logo{
+    color:#12f7ff
+}
+.navlist{
+    position: relative;
+    font-family: 'Yekan';
+    margin-top: 1%;
+    box-sizing: border-box;
+    list-style: none;
+    margin-left: 30%;
+}
+.navlist{
+    display: flex;
+}
+.navlist a{
+    color: #ffffff;
+    font-weight: 500px;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.navlist a:hover{
+    color: #21f8ff;
+    text-shadow: 0 0 10px rgba(18, 247, 255, 0.6),
+    0 0 20px rgba(18, 247, 255, 0.6),
+    0 0 30px rgba(18, 247, 255, 0.6),
+    0 0 40px rgba(18, 247, 255, 0.6),
+    0 0 70px rgba(18, 247, 255, 0.6),
+    0 0 80px rgba(18, 247, 255, 0.6),
+    0 0 100px rgba(18, 247, 255, 0.6),
+    0 0 150px rgba(18, 247, 255, 0.6);
+}
+
+
+.section{
+    position: fixed;
+    height: 450px;
+    display: flex;
+    align-items: center;
+    margin-top: 0;
+    margin-left: 78%;
+    z-index: 1;
+}
+.card{
+    position: relative;
+    background-color: white;
+    border-radius: 20px;
+    margin: 20px 0;
+    width: 280px;
+}
+.card::before{
+    content: "";
+    position: absolute;
+    background-color: #002543;
+    height: 35%;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+.card .card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    position: relative;
+}
+.image{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    padding: 3px;
+    background-color: white;
+    border: 3px solid #002543;
+}
+.image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+.media-icons{
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.media-icons i{
+    margin-top: 10px;
+    color: white;
+    opacity: .6;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+.media-icons i:hover{
+    opacity: 1;
+}
+.name-skill{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #333;
+    margin: 15px 0;
+}
+.name-skill .name{
+    font-size: 20px;
+    font-weight: 600;
+}
+.name-skill .skil{
+    font-size: 15px;
+    font-weight: 400;
+}
+.rating{
+    display: flex;
+    align-items: center;
+}
+.rating i{
+    color: #015498;
+    margin: 0 1px;
+    cursor: pointer;
+}
+.buttons{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+.buttons button{
+    background-color: #015498;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 8px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.buttons button:hover{
+    background-color: #013f72;
+}
+.content{
+    width: 100%;
+    margin-top: 10%;
+    margin-left: -15%;
+}
+.content form{
+    text-align: right;
+    max-width: 50rem;
+    margin: 1rem auto;
+    margin-bottom: 3rem;
+}
+.content form input,
+.content form textarea{
+    font-family: 'Yekan';
+    text-align: right;
+    width: 100%;
+    color: #333;
+    background: #c2c8f6;
+    margin-top: .5rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+}
+.content form textarea{
+    resize: none;
+}
+form .btn{
+    background: #002543;
+    color: #ffffff;
+    margin-left: 45%;
+    display: flex;
+    justify-self: center;
+    width: 10%;
+    height: 4%;
+    border-radius: 5px;
+}
