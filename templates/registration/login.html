@@ -7,15 +7,12 @@
 </head>
 <body>
     <h2>فرم ورود</h2>
-    <form method="post" action="">
+    <form action="{% url 'password_reset' %}" method="post">
       {% csrf_token %}
         {{form.as_p}}
-
-
         <input type="submit" value="ورود">
 
-
-        <a href="password_reset/">فراموشی رمز عبور</a>
+        <input type="submit" value="password reset">
     </form>
 </body>
 </html>
