@@ -3,7 +3,7 @@ from .forms import CustomUserCreationForm
 # Create your views here.
 
 def welcome(request):
-    return HttpResponse('<h1>welcome</h1>')
+    return render(request, 'accounts/static/profile1.html')
 
 
 def signup(request):
