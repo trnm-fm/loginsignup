@@ -1,9 +1,9 @@
-from django.shortcuts import render , HttpResponse , redirect
+from django.shortcuts import render , redirect
 from .forms import CustomUserCreationForm
 # Create your views here.
 
 def welcome(request):
-    return render(request, 'accounts/static/profile1.html')
+    return render(request, 'profile1.html')
 
 
 def signup(request):

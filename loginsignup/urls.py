@@ -20,7 +20,7 @@ from accounts.views import welcome,signup
 from django.contrib.auth import views as auth_views
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('accounts/', include('django.contrib.auth.urls')),
+    path('', include('django.contrib.auth.urls')),
     path('welcome/',welcome, name='welcome'),
     path('signup/',signup, name='signup'),
     path('password_reset/', auth_views.PasswordResetView.as_view(), name='password_reset'),
