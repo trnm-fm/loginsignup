@@ -131,5 +131,5 @@ AUTH_USER_MODEL = 'accounts.User'
 LOGIN_REDIRECT_URL = 'welcome'
 
 
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackends'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
